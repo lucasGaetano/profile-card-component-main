@@ -1,0 +1,15 @@
+body {
+    background-color:hsl(185, 75%, 39%);
+}
+.container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15% 35%;
+}
+.foto-perfil img{
+    margin: 10px;
+    border-radius: 50px;
+}
