@@ -38,7 +38,7 @@ body {
 }
 
 .dados {
-    border-top: solid 1px gray;
+    border-top: solid 1px hsl(227, 10%, 46%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,4 +47,8 @@ body {
 .dados div {
     flex-grow: 1;
     margin: 10px;
+}
+
+.cor {
+    color: hsl(227, 10%, 46%);
 }
