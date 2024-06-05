@@ -1,54 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 body {
-    background-color: hsl(185, 75%, 39%);
-    text-align: center;
-    font-weight: bold;
-    font-family: "Kumbh", sans-serif;
+    background-color: var(--background-color);
+    height: 100vh;
+    font-family: 'Kumbh-Sans', sans-serif;
+    font-size: 18px;
 }
 
-.container{
-    width: 400px;
-    border-radius: 10px;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+hr {
+    width: 100%;
 }
 
-.foto-perfil img{
-    border-radius: 50px;
-    margin: 10px;
-}
-
-.informacoes-pessoais {
+.container {
     display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.informacoes-pessoais div{
-    margin: 5px;
-}
-
-.cidade {
-    margin: 30px;
-
-}
-
-.dados {
-    border-top: solid 1px hsl(227, 10%, 46%);
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-.dados div {
-    flex-grow: 1;
-    margin: 10px;
+.cartao {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    gap: 25px;
+    margin: 20px;
+    width: 330px;
+    height: 350px;
 }
 
-.cor {
-    color: hsl(227, 10%, 46%);
+.cartao .informacoes-pessoais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.cartao .informacoes-pessoais img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.cartao .numeros-do-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.cartao .informacoes-pessoais p,
+.numeros-do-perfil .informacoes .contador{
+    font-weight: 700;
+}
+
+.cartao .informacoes-pessoais .idade,
+.cartao .informacoes-pessoais .cidade,
+.cartao .numeros-do-perfil .tipo-de-contador{
+    color: var(--text-color);
 }
